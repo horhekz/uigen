@@ -32,9 +32,7 @@ jobs:
           
       - name: Project Setup
         run: |
-          npm ci
-          npx prisma generate
-          npx prisma migrate deploy
+          npm run setup
           npm run dev:daemon
 
       - name: Run Claude Code
@@ -44,15 +42,25 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 
           # Extra context appended to Claude's system prompt (was: custom_instructions)
-          prompt: |
+          custom_instructions: |
             The project is already set up with all dependencies installed.
             The server is already running at localhost:3000. Logs from it
             are being written to logs.txt. If needed, you can query the
             db with the 'sqlite3' cli. If needed, use the mcp__playwright
             set of tools to launch a browser and interact with the app.
-
-          # v1 consolidates allowed-tools and the MCP config into claude_args,
-          # which are passed straight through to the Claude Code CLI.
-          claude_args: |
-            --allowed-tools "Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_snapshot,mcp__playwright__browser_click,mcp__playwright__browser_navigate,mcp__playwright__browser_type,mcp__playwright__browser_take_screenshot,mcp__playwright__browser_wait_for"
-            --mcp-config '{"mcpServers":{"playwright":{"command":"npx","args":["@playwright/mcp@latest","--allowed-origins","localhost:3000;cdn.tailwindcss.com;esm.sh"]}}}'
+          
+          mcp_config: |
+            {
+                "mcpServers": {
+                "playwright": {
+                    "command": "npx",
+                    "args": [
+                    "@playwright/mcp@latest",
+                    "--allowed-origins",
+                    "localhost:3000;cdn.tailwindcss.com;esm.sh"
+                    ]
+                }
+                }
+            }
+          
+          allowed_tools: "Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_snapshot,mcp__playwright__browser_click,..."
