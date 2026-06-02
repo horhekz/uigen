@@ -32,7 +32,9 @@ jobs:
           
       - name: Project Setup
         run: |
-          npm run setup
+          npm ci
+          npx prisma generate
+          npx prisma migrate deploy
           npm run dev:daemon
 
       - name: Run Claude Code
