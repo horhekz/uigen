@@ -1,0 +1,38 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e15]:
+          - generic [ref=e52]:
+            - generic [ref=e55]: Create a simple user profile card component with an avatar, name, role, and a follow button
+            - img [ref=e58]
+          - generic [ref=e61]:
+            - img [ref=e64]
+            - generic [ref=e69]:
+              - generic [ref=e72]: str_replace_editor
+              - separator [ref=e73]
+              - generic [ref=e76]: str_replace_editor
+              - generic [ref=e77]:
+                - img [ref=e78]
+                - generic [ref=e80]: Generating...
+        - generic [ref=e23]:
+          - textbox "Describe the React component you want to create..." [disabled] [ref=e24]
+          - button [disabled] [ref=e25]:
+            - img [ref=e26]
+    - separator [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - tablist [ref=e34]:
+          - tab "Preview" [selected] [ref=e35]
+          - tab "Code" [ref=e36]
+        - generic [ref=e37]:
+          - button "Sign In" [ref=e38]
+          - button "Sign Up" [ref=e39]
+      - iframe [ref=e81]:
+        - generic [ref=f2e6]:
+          - generic [ref=f2e8]: SA
+          - heading "Sarah Anderson" [level=2] [ref=f2e9]
+          - paragraph [ref=f2e10]: Product Designer
+          - button "Follow" [ref=f2e11] [cursor=pointer]
+  - alert [ref=e51]

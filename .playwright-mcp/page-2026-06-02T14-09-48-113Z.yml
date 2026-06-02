@@ -1,0 +1,145 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e15]:
+          - generic [ref=e52]:
+            - generic [ref=e55]: Create a simple user profile card component with an avatar, name, role, and a follow button
+            - img [ref=e58]
+          - generic [ref=e74]:
+            - img [ref=e77]
+            - generic [ref=e82]:
+              - generic [ref=e85]: str_replace_editor
+              - separator [ref=e86]
+              - generic [ref=e87]:
+                - paragraph [ref=e88]: "Done! Created a user profile card with:"
+                - list [ref=e89]:
+                  - listitem [ref=e90]: Avatar image with border
+                  - listitem [ref=e91]: Name and role text
+                  - listitem [ref=e92]: Follow button that toggles between "Follow" and "Following" states
+                  - listitem [ref=e93]: Styled with Tailwind CSS
+        - generic [ref=e23]:
+          - textbox "Describe the React component you want to create..." [ref=e24]
+          - button [disabled] [ref=e25]:
+            - img [ref=e26]
+    - separator [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - tablist [ref=e34]:
+          - tab "Preview" [ref=e35]
+          - tab "Code" [active] [selected] [ref=e36]
+        - generic [ref=e37]:
+          - button "Sign In" [ref=e38]
+          - button "Sign Up" [ref=e39]
+      - generic [ref=e95]:
+        - generic [ref=e103] [cursor=pointer]:
+          - img [ref=e104]
+          - generic [ref=e109]: App.jsx
+        - separator [ref=e110]
+        - code [ref=e115]:
+          - generic [ref=e116]:
+            - generic [ref=e118]:
+              - generic [ref=e121]: "1"
+              - generic [ref=e123]: "2"
+              - generic [ref=e124]:
+                - generic [ref=e125] [cursor=pointer]: 
+                - generic [ref=e126]: "3"
+              - generic [ref=e128]: "4"
+              - generic [ref=e130]: "5"
+              - generic [ref=e131]:
+                - generic [ref=e132] [cursor=pointer]: 
+                - generic [ref=e133]: "6"
+              - generic [ref=e134]:
+                - generic [ref=e135] [cursor=pointer]: 
+                - generic [ref=e136]: "7"
+              - generic [ref=e138]:
+                - generic [ref=e139] [cursor=pointer]: 
+                - generic [ref=e140]: "8"
+              - generic [ref=e143]: "9"
+              - generic [ref=e144]:
+                - generic [ref=e145] [cursor=pointer]: 
+                - generic [ref=e146]: "10"
+              - generic [ref=e147]:
+                - generic [ref=e148] [cursor=pointer]: 
+                - generic [ref=e149]: "11"
+              - generic [ref=e151]: "12"
+              - generic [ref=e155]: "13"
+              - generic [ref=e157]: "14"
+              - generic [ref=e160]: "15"
+              - generic [ref=e162]: "16"
+              - generic [ref=e164]: "17"
+              - generic [ref=e166]: "18"
+              - generic [ref=e167]:
+                - generic [ref=e168] [cursor=pointer]: 
+                - generic [ref=e169]: "19"
+              - generic [ref=e172]: "20"
+              - generic [ref=e174]: "21"
+              - generic [ref=e176]: "22"
+              - generic [ref=e178]: "23"
+              - generic [ref=e179]:
+                - generic [ref=e180] [cursor=pointer]: 
+                - generic [ref=e181]: "24"
+              - generic [ref=e183]: "25"
+              - generic [ref=e185]: "26"
+              - generic [ref=e187]: "27"
+              - generic [ref=e189]: "28"
+              - generic [ref=e190]:
+                - generic [ref=e191] [cursor=pointer]: 
+                - generic [ref=e192]: "29"
+              - generic [ref=e194]: "30"
+              - generic [ref=e195]:
+                - generic [ref=e196] [cursor=pointer]: 
+                - generic [ref=e197]: "31"
+              - generic [ref=e199]:
+                - generic [ref=e200] [cursor=pointer]: 
+                - generic [ref=e201]: "32"
+              - generic [ref=e203]: "33"
+              - generic [ref=e206]: "34"
+            - generic [ref=e422]:
+              - generic [ref=e424]: "import { useState } from 'react';"
+              - generic [ref=e427]: "export default function App() {"
+              - generic [ref=e429]: const [isFollowing, setIsFollowing] = useState(false);
+              - generic [ref=e432]: return (
+              - generic [ref=e434]: <div className="flex items-center justify-center
+              - generic [ref=e436]: min-h-screen bg-gray-100">
+              - generic [ref=e438]: <div className="bg-white rounded-lg shadow-lg p-8
+              - generic [ref=e440]: w-80">
+              - generic [ref=e442]: "{/* Avatar */}"
+              - generic [ref=e444]: <div className="flex justify-center mb-4">
+              - generic [ref=e446]: <img
+              - generic [ref=e448]: src="https://images.unsplash.com/
+              - generic [ref=e450]: photo-1472099645785-5658abf4ff4e?w=400&h=400&
+              - generic [ref=e452]: fit=crop"
+              - generic [ref=e454]: alt="User avatar"
+              - generic [ref=e456]: className="w-24 h-24 rounded-full
+              - generic [ref=e458]: object-cover border-4 border-blue-500"
+              - generic [ref=e460]: />
+              - generic [ref=e462]: </div>
+              - generic [ref=e465]: "{/* Name */}"
+              - generic [ref=e467]: <h2 className="text-2xl font-bold text-center
+              - generic [ref=e469]: text-gray-800 mb-1">
+              - generic [ref=e471]: Alex Johnson
+              - generic [ref=e473]: </h2>
+              - generic [ref=e476]: "{/* Role */}"
+              - generic [ref=e478]: <p className="text-center text-gray-600 mb-6">
+              - generic [ref=e480]: Product Designer
+              - generic [ref=e482]: </p>
+              - generic [ref=e485]: "{/* Follow Button */}"
+              - generic [ref=e487]: <button
+              - generic [ref=e489]: "onClick={() => setIsFollowing(!isFollowing)}"
+              - generic [ref=e491]: "className={`w-full py-2 px-4 rounded-lg"
+              - generic [ref=e493]: "font-semibold transition-colors ${"
+              - generic [ref=e495]: isFollowing
+              - generic [ref=e497]: "? 'bg-gray-200 text-gray-800"
+              - generic [ref=e499]: hover:bg-gray-300'
+              - generic [ref=e501]: ": 'bg-blue-500 text-white"
+            - textbox "Editor content" [ref=e503]
+            - generic:
+              - generic:
+                - generic:
+                  - list
+  - alert [ref=e51]
+  - generic [ref=e504]:
+    - alert
+    - alert
